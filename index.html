@@ -1,61 +1,277 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/index.js" defer></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@600;700&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>SouveDice - Главная</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-body dflex row justify-between align-center">
+          <div class="header-logo">
+            <img src="assets/icons/logo.svg" alt="logo" class="logo" />
+          </div>
 
-<header class="header">
-    <div class="container">
-        <div class="header-body">
-            <div class="header-logo">
-                <img src="assets/icons/logo.svg" alt="logo" class="logo">
-            </div>
+          <nav class="nav">
+            <ul class="header-menu dflex row">
+              <li class="menu__item">
+                <a href="" class="menu__link">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Товары</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Акции</a>
+              </li>
+            </ul>
+          </nav>
 
-            <nav class="nav">
-                <ul class="header-menu">
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Главная</a>
+          <ul class="header-buttons dflex row">
+            <li class="button-item">
+              <a href="" class="button button-dark header__button"
+                >Регистрация</a
+              >
+            </li>
+
+            <li class="button-item">
+              <a href="" class="button header__button">Вход</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="container">
+        <div class="banner-body">
+          <h1 class="title banner__title">Сувениры Казани Доступные всем!</h1>
+          <p class="banner__subtitle">
+            SouveDice предостовляет услуги доставки сувениров из города Казани
+            по всей России.
+          </p>
+          <a href="#" class="button button-primary banner__button">Купить</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features">
+      <div class="container">
+        <div class="section-header features-header">
+          <h2 class="section__title features__title">Почему мы?</h2>
+          <p class="section__subtitle features__subtitle">
+            Татарский интернет-магазин SouveDice – это магазин татарских
+            сувениров, а также сувениров из Казани и товаров из Татарстана .
+          </p>
+        </div>
+
+        <div class="section-body features-body">
+          <ul class="grid features-grid">
+            <li class="features-item dflex col align-center">
+              <img
+                src="assets/icons/feature1.svg"
+                alt="feature"
+                class="item__icon"
+              />
+
+              <h3 class="title item__title">Большой выбор</h3>
+              <p class="item__text">
+                В нашем магазине можете купить татарскую тюбетейку,
+                мусульманскую посуду, татарский словарь, книги на татарском
+                языке, национальную одежду и обувь и многое другое.
+              </p>
+            </li>
+
+            <li class="features-item dflex col align-center">
+              <img
+                src="assets/icons/feature2.svg"
+                alt="feature"
+                class="item__icon"
+              />
+
+              <h3 class="title item__title">Быстрая доставка</h3>
+              <p class="item__text">
+                Благодоря нашим партнерам каждый может прикоснуться к татарской
+                культуре не боясь что их заказ будет идти вечность или утерян.
+              </p>
+            </li>
+
+            <li class="features-item dflex col align-center">
+              <img
+                src="assets/icons/feature3.svg"
+                alt="feature"
+                class="item__icon"
+              />
+
+              <h3 class="title item__title">Приятные цены</h3>
+              <p class="item__text">
+                Наша цель не нажится на наших клиентах а помочь им не
+                чувствовать себя чужими в другом городе или стране. Поэтому мы
+                предлогаем самые низкие цены на нашу продукцию.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section buy">
+      <div class="container">
+        <div class="section-header buy-header">
+          <h2 class="section__title buy__title">А как купить то?</h2>
+          <p class="section__subtitle buy__subtitle">
+            Если вдруг у вас возник такой вопрос значит дизайнер не достаточно
+            отработал( Но все же давайте посмотрим на весь процесс заказа
+            товара.
+          </p>
+        </div>
+
+        <div class="section-body buy-body">
+          <div class="buy-line"></div>
+
+          <ul class="grid buy-grid">
+            <li class="buy-item dflex col align-center">
+              <img
+                src="assets/icons/advantages-item1.svg"
+                alt="advantages-item1"
+                class="item__img"
+              />
+
+              <h3 class="title item__title">Выбор товара</h3>
+              <p class="item__text">
+                Выберите товар который больше всего понравился и добавите его в
+                корзину.
+              </p>
+            </li>
+
+            <li class="buy-item dflex col align-center">
+              <img
+                src="assets/icons/advantages-item2.svg"
+                alt="advantages-item2"
+                class="item__img"
+              />
+
+              <h3 class="title item__title">Корзина</h3>
+              <p class="item__text">
+                Зайдите в корзину и пересмотрите все товары добаленные ранее,
+                нечего не забыли? Если все ок, то идем дальше.
+              </p>
+            </li>
+
+            <li class="buy-item dflex col align-center">
+              <img
+                src="assets/icons/advantages-item3.svg"
+                alt="advantages-item3"
+                class="item__img"
+              />
+
+              <h3 class="title item__title">Оплата</h3>
+              <p class="item__text">
+                Нажмите на кнопку “Оплата” в корзине. Дальше нечего сложного,
+                выберите способ которым вы оплачиватете.
+              </p>
+            </li>
+
+            <li class="buy-item dflex col align-center">
+              <img
+                src="assets/icons/advantages-item4.svg"
+                alt="advantages-item4"
+                class="item__img"
+              />
+
+              <h3 class="title item__title">Все?</h3>
+              <p class="item__text">
+                Ну да, мы приняли ваш заказ и оплату, вся инфа которая вам нужна
+                придет на почту указанная при регистрации.
+              </p>
+            </li>
+
+            <li class="buy-item dflex col align-center">
+              <img
+                src="assets/icons/advantages-item5.svg"
+                alt="advantages-item5"
+                class="item__img"
+              />
+
+              <h3 class="title item__title">Спасибо</h3>
+              <p class="item__text">
+                Да на здоровье. Вот она - культурная Казани.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feedback">
+      <div class="container">
+        <div class="section-body feedback-body grid">
+          <div class="feedback-image">
+            <img
+              src="assets/images/img.png"
+              alt="image"
+              class="feedback__img"
+            />
+          </div>
+
+          <div class="feedback-content">
+            <h2 class="title feedback__title">Остались вопросы?</h2>
+            <p class="feedback__text">
+              Если у вас остались вопросы по заказу или возникли трудности с
+              оформлением заказа то оставьте заявку и мы с вами свяжемся и
+              поможем решить все возникшие вопросы
+            </p>
+
+            <form action="/" class="form grid feedback-form">
+              <input type="text" class="input first-child" placeholder="Почта"/>
+              <input type="text" class="input" placeholder="Имя"/>
+              <button class="form-button button-orange" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-body dflex align-center justify-between row">
+                <div class="footer-logo">
+                    <img src="assets/icons/logo.svg" alt="logo" class="logo">
+                </div>
+
+                <ul class="footer-social dflex align-center row">
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <img src="assets/icons/inst.svg" alt="inst" class="social-icon">
+                        </a>
                     </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Товары</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">О нас</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link">Акции</a>
+
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <img src="assets/icons/vk.svg" alt="vk" class="social-icon">
+                        </a>
                     </li>
                 </ul>
-            </nav>
-
-            <ul class="header-buttons">
-                <li class="button-item">
-                    <a href="" class="button header__button">Регистрация</a>
-                </li>
-
-                <li class="button-item">
-                    <a href="" class="button header__button">Вход</a>
-                </li>
-            </ul>
+            </div>
         </div>
-    </div>
-</header>
-
-<section class="banner">
-
-
-</section>
-
-
-</body>
+    </footer>
+  </body>
 </html>
